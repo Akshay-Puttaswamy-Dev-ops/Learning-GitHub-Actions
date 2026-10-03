@@ -10,3 +10,13 @@ jobs:
         run: echo "Hello World this is my first workflow"
       - name: Checking OS release for Githun  hosted runner
         run: cat /etc/os-release
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Job2
+        run: hostname
+      - name: Running multiple commands
+        run: |
+          echo "Hi from AP
+          echo "Current time is `date`"
+          sleep 10
